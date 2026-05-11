@@ -13,81 +13,45 @@ export function Navbar() {
   const otherLocale = locale === "vi" ? "ko" : "vi";
   const switchHref = `/${otherLocale}`;
 
-  const links = [
-    { label: t("schedule"), href: "#schedule" },
-    { label: t("register"), href: "#register" },
-  ];
-
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href={`/${locale}`} className="flex items-center gap-2">
-          <span className="text-primary font-bold text-lg tracking-tight">K-Tech</span>
-          <span className="text-muted-foreground text-sm font-medium">Connect</span>
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/70 backdrop-blur-md border-b border-border">
+      <div className="max-w-[1200px] mx-auto px-6 h-14 flex items-center justify-between">
+        <Link href={`/${locale}`} className="font-pixel text-lg text-primary display-glow tracking-wider">
+          K·TECH CONNECT
         </Link>
 
-        {/* Desktop */}
-        <div className="hidden md:flex items-center gap-6">
-          {links.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              {link.label}
-            </a>
-          ))}
-          <a
-            href={switchHref}
-            className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <Globe className="w-4 h-4" />
-            {otherLocale === "ko" ? "한국어" : "Tiếng Việt"}
+        <div className="hidden md:flex items-center gap-5">
+          <a href="#schedule" className="font-mono text-xs text-muted-foreground hover:text-foreground transition-colors uppercase tracking-wider">
+            [{t("schedule")}]
           </a>
-          <a
-            href="#register"
-            className="text-sm font-medium bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors"
-          >
-            {t("register")}
+          <a href="#register" className="font-mono text-xs text-muted-foreground hover:text-foreground transition-colors uppercase tracking-wider">
+            [{t("register")}]
+          </a>
+          <a href={switchHref} className="flex items-center gap-1 font-mono text-xs text-muted-foreground hover:text-foreground transition-colors">
+            <Globe className="w-3.5 h-3.5" />
+            {otherLocale === "ko" ? "KO" : "VI"}
+          </a>
+          <a href="#register" className="btn-glow font-pixel text-sm px-4 py-1.5 rounded-sm text-primary-foreground uppercase tracking-wider transition-all">
+            REGISTER
           </a>
         </div>
 
-        {/* Mobile hamburger */}
-        <button
-          className="md:hidden p-2 text-foreground"
-          onClick={() => setMobileOpen(!mobileOpen)}
-        >
+        <button className="md:hidden p-2 text-foreground" onClick={() => setMobileOpen(!mobileOpen)}>
           {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
       </div>
 
-      {/* Mobile drawer */}
       {mobileOpen && (
-        <div className="md:hidden bg-background border-b border-border px-6 py-4 space-y-4">
-          {links.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="block text-sm text-muted-foreground"
-              onClick={() => setMobileOpen(false)}
-            >
-              {link.label}
-            </a>
-          ))}
-          <a
-            href={switchHref}
-            className="flex items-center gap-2 text-sm text-muted-foreground"
-            onClick={() => setMobileOpen(false)}
-          >
-            <Globe className="w-4 h-4" />
+        <div className="md:hidden bg-background border-b border-border px-6 py-4 space-y-3">
+          <a href="#schedule" className="block font-mono text-xs text-muted-foreground uppercase tracking-wider" onClick={() => setMobileOpen(false)}>
+            [{t("schedule")}]
+          </a>
+          <a href={switchHref} className="flex items-center gap-1 font-mono text-xs text-muted-foreground" onClick={() => setMobileOpen(false)}>
+            <Globe className="w-3.5 h-3.5" />
             {otherLocale === "ko" ? "한국어" : "Tiếng Việt"}
           </a>
-          <a
-            href="#register"
-            className="block text-sm font-medium bg-primary text-primary-foreground px-4 py-2 rounded-lg text-center"
-            onClick={() => setMobileOpen(false)}
-          >
-            {t("register")}
+          <a href="#register" className="btn-glow block text-center font-pixel text-sm px-4 py-2 rounded-sm text-primary-foreground uppercase" onClick={() => setMobileOpen(false)}>
+            REGISTER
           </a>
         </div>
       )}

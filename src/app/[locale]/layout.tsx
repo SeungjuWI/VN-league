@@ -3,10 +3,16 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { VT323, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "../globals.css";
 
-const inter = Inter({
+const vt323 = VT323({
+  weight: "400",
+  variable: "--font-pixel",
+  subsets: ["latin"],
+});
+
+const spaceGrotesk = Space_Grotesk({
   variable: "--font-sans",
   subsets: ["latin", "vietnamese"],
 });
@@ -19,7 +25,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "May Matching Week: K-Tech Connect",
   description: "Unlock Your Next Move — K-Tech Connect",
-  themeColor: "#FF6000",
+  themeColor: "#C77DFF",
 };
 
 export default async function LocaleLayout({
@@ -38,8 +44,8 @@ export default async function LocaleLayout({
   const messages = await getMessages({ locale });
 
   return (
-    <html lang={locale} className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}>
-      <body className="min-h-screen bg-background text-foreground">
+    <html lang={locale} className={`${vt323.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable}`}>
+      <body className="min-h-screen bg-background text-foreground font-sans">
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>

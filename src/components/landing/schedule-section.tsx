@@ -18,21 +18,18 @@ export function ScheduleSection() {
   return (
     <section id="schedule" className="py-24 px-6">
       <div className="max-w-[1200px] mx-auto">
-        <p className="text-primary font-mono text-xs tracking-widest uppercase mb-3">
-          {t("eyebrow")}
-        </p>
-        <h2 className="text-2xl sm:text-3xl font-semibold mb-8">{t("title")}</h2>
+        <p className="font-pixel text-lg text-primary display-glow mb-2">[03_SCHEDULE]</p>
+        <h2 className="font-pixel text-3xl sm:text-4xl text-foreground mb-8">{t("title")}</h2>
 
-        {/* Day tabs */}
-        <div className="flex gap-2 mb-8 overflow-x-auto">
+        <div className="flex gap-2 mb-6 overflow-x-auto">
           {days.map((day, i) => (
             <button
               key={i}
               onClick={() => setActiveDay(i)}
-              className={`px-5 py-2.5 rounded-lg text-sm font-medium whitespace-nowrap transition-colors ${
+              className={`font-pixel text-base px-4 py-2 rounded-sm whitespace-nowrap transition-all ${
                 activeDay === i
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-card border border-border text-muted-foreground hover:text-foreground"
+                  ? "btn-glow text-primary-foreground"
+                  : "btn-ghost text-muted-foreground hover:text-foreground"
               }`}
             >
               {day.title}
@@ -40,9 +37,8 @@ export function ScheduleSection() {
           ))}
         </div>
 
-        {/* Schedule table */}
-        <div className="bg-card border border-border rounded-2xl overflow-hidden">
-          <div className="grid grid-cols-[120px_1fr_1fr] sm:grid-cols-[140px_1fr_1fr] text-xs font-medium text-muted-foreground uppercase tracking-wider border-b border-border">
+        <div className="glow-box rounded-sm overflow-hidden">
+          <div className="grid grid-cols-[110px_1fr_1fr] sm:grid-cols-[140px_1fr_1fr] font-mono text-[10px] text-muted-foreground uppercase tracking-[0.12em] border-b border-border">
             <div className="px-4 py-3">{t("col_time")}</div>
             <div className="px-4 py-3">{t("col_main")}</div>
             <div className="px-4 py-3">{t("col_side")}</div>
@@ -53,11 +49,11 @@ export function ScheduleSection() {
             return (
               <div
                 key={i}
-                className={`grid grid-cols-[120px_1fr_1fr] sm:grid-cols-[140px_1fr_1fr] border-b border-border last:border-0 ${
-                  isBreak ? "bg-muted/30" : ""
+                className={`grid grid-cols-[110px_1fr_1fr] sm:grid-cols-[140px_1fr_1fr] border-b border-border/50 last:border-0 ${
+                  isBreak ? "bg-primary/5" : ""
                 }`}
               >
-                <div className="px-4 py-3 font-mono text-xs text-primary">{item.time}</div>
+                <div className="px-4 py-3 font-pixel text-sm text-primary">{item.time}</div>
                 <div className="px-4 py-3 text-sm">{item.main}</div>
                 <div className="px-4 py-3 text-sm text-muted-foreground">{item.side || "—"}</div>
               </div>

@@ -9,7 +9,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
-  --font-heading: var(--font-sans);
+  --font-pixel: var(--font-pixel);
+  --font-heading: var(--font-pixel);
   --color-ring: var(--ring);
   --color-input: var(--input);
   --color-border: var(--border);
@@ -41,33 +42,32 @@
 }
 
 :root {
-  /* Dark theme as default — matching LikeLion community style */
-  --background: #0A0A0A;
-  --foreground: #F5F5F5;
-  --card: #141414;
-  --card-foreground: #F5F5F5;
-  --popover: #141414;
-  --popover-foreground: #F5F5F5;
-  --primary: #FF6000;
-  --primary-foreground: #FFFFFF;
-  --secondary: #1A1A1A;
-  --secondary-foreground: #F5F5F5;
-  --muted: #1A1A1A;
-  --muted-foreground: #888888;
-  --accent: #1F1F1F;
-  --accent-foreground: #F5F5F5;
+  --background: #08020F;
+  --foreground: #F4EDFF;
+  --card: #0E0618;
+  --card-foreground: #F4EDFF;
+  --popover: #0E0618;
+  --popover-foreground: #F4EDFF;
+  --primary: #D4B5FF;
+  --primary-foreground: #08020F;
+  --secondary: #140A22;
+  --secondary-foreground: #F4EDFF;
+  --muted: #140A22;
+  --muted-foreground: #8B7DA8;
+  --accent: #1A0B2E;
+  --accent-foreground: #F4EDFF;
   --destructive: #DC2626;
-  --border: #262626;
-  --input: #262626;
-  --ring: #FF6000;
-  --brand: #FF6000;
-  --brand-foreground: #FFFFFF;
-  --radius: 0.625rem;
-  --chart-1: #FF6000;
-  --chart-2: #FF8533;
-  --chart-3: #FFB380;
-  --chart-4: #444444;
-  --chart-5: #666666;
+  --border: #2A1548;
+  --input: #2A1548;
+  --ring: #C77DFF;
+  --brand: #C77DFF;
+  --brand-foreground: #08020F;
+  --radius: 4px;
+  --chart-1: #C77DFF;
+  --chart-2: #D4B5FF;
+  --chart-3: #FF6FD8;
+  --chart-4: #9D4EDD;
+  --chart-5: #6B21A8;
 }
 
 @layer base {
@@ -76,32 +76,75 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-image:
+      linear-gradient(rgba(157, 78, 221, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(157, 78, 221, 0.08) 1px, transparent 1px);
+    background-size: 48px 48px;
   }
   html {
     @apply font-sans;
   }
 }
 
-/* Dot grid background pattern */
-.dot-grid {
-  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
-  background-size: 24px 24px;
+/* Hero-only gradient glow + scanlines */
+.hero-effects {
+  position: relative;
+  background:
+    radial-gradient(circle at 80% 0%, rgba(199, 125, 255, 0.15), transparent 50%),
+    radial-gradient(circle at 0% 100%, rgba(255, 111, 216, 0.10), transparent 50%);
 }
 
-/* Scrolling ticker animation */
-@keyframes ticker {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+/* Display glow for pixel titles */
+.display-glow {
+  color: #D4B5FF;
+  text-shadow:
+    0 0 20px rgba(199, 125, 255, 0.6),
+    0 0 40px rgba(199, 125, 255, 0.3);
 }
 
-.animate-ticker {
-  animation: ticker 20s linear infinite;
+/* Glow box */
+.glow-box {
+  border: 1px solid #9D4EDD;
+  background: rgba(26, 11, 46, 0.8);
+  box-shadow: 0 0 20px rgba(157, 78, 221, 0.15), inset 0 0 20px rgba(157, 78, 221, 0.05);
 }
 
-/* Number counter animation */
-@keyframes count-up {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+/* CTA button */
+.btn-glow {
+  background: linear-gradient(135deg, #C77DFF 0%, #9D4EDD 100%);
+  box-shadow: 0 0 24px rgba(199, 125, 255, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border: 1px solid #D4B5FF;
+}
+.btn-glow:hover {
+  box-shadow: 0 0 32px rgba(199, 125, 255, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* Ghost button */
+.btn-ghost {
+  border: 1px solid #9D4EDD;
+  box-shadow: 0 0 12px rgba(157, 78, 221, 0.2);
+}
+.btn-ghost:hover {
+  background: rgba(157, 78, 221, 0.15);
+  box-shadow: 0 0 20px rgba(157, 78, 221, 0.35);
+}
+
+/* Blinking cursor */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+/* Slow gradient border animation */
+@keyframes border-glow {
+  0%, 100% { border-color: #9D4EDD; }
+  50% { border-color: #C77DFF; }
+}
+.animate-border-glow {
+  animation: border-glow 8s ease-in-out infinite;
 }
 
 /* Section fade in */
@@ -109,7 +152,6 @@
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
 .animate-fade-up {
   animation: fade-up 0.6s ease-out forwards;
 }

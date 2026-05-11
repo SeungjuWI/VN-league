@@ -29,55 +29,27 @@ export function Countdown({ targetDate }: CountdownProps) {
     return () => clearInterval(interval);
   }, [targetDate]);
 
-  if (!mounted) {
-    return <CountdownDisplay days="--" hours="--" minutes="--" seconds="--" />;
-  }
+  const units = [
+    { value: mounted ? time.days : 0, label: t("countdown_days") },
+    { value: mounted ? time.hours : 0, label: t("countdown_hours") },
+    { value: mounted ? time.minutes : 0, label: t("countdown_minutes") },
+    { value: mounted ? time.seconds : 0, label: t("countdown_seconds") },
+  ];
 
   return (
-    <CountdownDisplay
-      days={String(time.days).padStart(2, "0")}
-      hours={String(time.hours).padStart(2, "0")}
-      minutes={String(time.minutes).padStart(2, "0")}
-      seconds={String(time.seconds).padStart(2, "0")}
-    />
-  );
-}
-
-function CountdownDisplay({
-  days,
-  hours,
-  minutes,
-  seconds,
-}: {
-  days: string;
-  hours: string;
-  minutes: string;
-  seconds: string;
-}) {
-  const t = useTranslations("hero");
-
-  return (
-    <div className="flex items-center gap-3">
-      <TimeUnit value={days} label={t("countdown_days")} />
-      <span className="text-2xl font-mono text-muted-foreground/40">:</span>
-      <TimeUnit value={hours} label={t("countdown_hours")} />
-      <span className="text-2xl font-mono text-muted-foreground/40">:</span>
-      <TimeUnit value={minutes} label={t("countdown_minutes")} />
-      <span className="text-2xl font-mono text-muted-foreground/40">:</span>
-      <TimeUnit value={seconds} label={t("countdown_seconds")} />
-    </div>
-  );
-}
-
-function TimeUnit({ value, label }: { value: string; label: string }) {
-  return (
-    <div className="text-center">
-      <div className="text-3xl sm:text-4xl font-mono font-bold text-foreground tracking-tight">
-        {value}
-      </div>
-      <div className="text-[10px] uppercase tracking-[0.06em] text-muted-foreground mt-1">
-        {label}
-      </div>
+    <div className="grid grid-cols-4 gap-3">
+      {units.map((unit, i) => (
+        <div key={unit.label} className="text-center">
+          <div className="glow-box rounded-sm py-3 animate-border-glow">
+            <span className="font-pixel text-4xl sm:text-5xl text-primary tabular-nums display-glow">
+              {String(unit.value).padStart(2, "0")}
+            </span>
+          </div>
+          <p className="font-mono text-[10px] text-muted-foreground mt-2 uppercase tracking-[0.15em]">
+            {unit.label}
+          </p>
+        </div>
+      ))}
     </div>
   );
 }

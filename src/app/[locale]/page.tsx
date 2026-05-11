@@ -8,10 +8,12 @@ import { CompaniesSection } from "@/components/landing/companies-section";
 import { CtaSection } from "@/components/landing/cta-section";
 import { ContactSection } from "@/components/landing/contact-section";
 import { Footer } from "@/components/landing/footer";
+import { CursorGlow } from "@/components/landing/cursor-glow";
 
 export default function LandingPage() {
   return (
     <>
+      <CursorGlow />
       <Navbar />
       <main>
         <Hero />

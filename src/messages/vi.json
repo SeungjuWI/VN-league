@@ -137,6 +137,14 @@
       { "role": "Onsite Support", "name": "Minh Thu (Vietnam)", "phone": "0896 487 127" }
     ]
   },
+  "login": {
+    "title": "Đăng nhập",
+    "subtitle": "May Matching Week: K-Tech Connect",
+    "description": "Đăng nhập để đăng ký tham gia sự kiện, Ideathon hoặc phỏng vấn 1:1.",
+    "google_button": "Đăng nhập bằng Google",
+    "terms_notice": "Bằng việc đăng nhập, bạn đồng ý với Điều khoản sử dụng và Chính sách bảo mật.",
+    "back_home": "Quay lại trang chủ"
+  },
   "footer": {
     "copyright": "© 2026 LIKELION Vietnam. All rights reserved.",
     "contact": "Liên hệ",
