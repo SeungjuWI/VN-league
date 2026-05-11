@@ -21,9 +21,12 @@ export function Navbar() {
         </Link>
 
         <div className="hidden md:flex items-center gap-5">
-          <a href="#schedule" className="font-mono text-xs text-muted-foreground hover:text-foreground transition-colors uppercase tracking-wider">
-            [{t("schedule")}]
-          </a>
+          <Link href={`/${locale}/about`} className="font-mono text-xs text-muted-foreground hover:text-foreground transition-colors uppercase tracking-wider">
+            [{t("about")}]
+          </Link>
+          <Link href={`/${locale}/community`} className="font-mono text-xs text-muted-foreground hover:text-foreground transition-colors uppercase tracking-wider">
+            [{t("community")}]
+          </Link>
           <a href={switchHref} className="flex items-center gap-1 font-mono text-xs text-muted-foreground hover:text-foreground transition-colors">
             <Globe className="w-3.5 h-3.5" />
             {otherLocale === "ko" ? "KO" : "VI"}
@@ -40,9 +43,12 @@ export function Navbar() {
 
       {mobileOpen && (
         <div className="md:hidden bg-background border-b border-border px-6 py-4 space-y-3">
-          <a href="#schedule" className="block font-mono text-xs text-muted-foreground uppercase tracking-wider" onClick={() => setMobileOpen(false)}>
-            [{t("schedule")}]
-          </a>
+          <Link href={`/${locale}/about`} className="block font-mono text-xs text-muted-foreground uppercase tracking-wider" onClick={() => setMobileOpen(false)}>
+            [{t("about")}]
+          </Link>
+          <Link href={`/${locale}/community`} className="block font-mono text-xs text-muted-foreground uppercase tracking-wider" onClick={() => setMobileOpen(false)}>
+            [{t("community")}]
+          </Link>
           <a href={switchHref} className="flex items-center gap-1 font-mono text-xs text-muted-foreground" onClick={() => setMobileOpen(false)}>
             <Globe className="w-3.5 h-3.5" />
             {otherLocale === "ko" ? "한국어" : "Tiếng Việt"}

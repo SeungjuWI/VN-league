@@ -8,7 +8,7 @@ export function Hero() {
   const locale = useLocale();
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center hero-effects overflow-hidden px-6">
+    <section className="relative min-h-[85vh] flex flex-col items-center justify-center hero-effects overflow-hidden px-6">
       {/* Partner logos */}
       <div className="absolute top-20 left-0 right-0 flex justify-center">
         <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
