@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "title": "May Matching Week: K-Tech Connect",
+    "description": "Unlock Your Next Move — 호치민 K-Tech 채용 매칭 이벤트"
+  },
+  "nav": {
+    "home": "홈",
+    "login": "로그인",
+    "schedule": "일정",
+    "register": "등록",
+    "language": "언어"
+  },
+  "hero": {
+    "badge": "2026년 5월 19일 – 21일",
+    "title_line1": "K-Tech",
+    "title_line2": "Connect.",
+    "event_name": "May Matching Week",
+    "subtitle": "Unlock Your Next Move",
+    "description": "한국 Tech 기업과 베트남 인재의 3일간 직접 매칭 — 멘토링, 아이디어톤 & 1:1 인터뷰.",
+    "cta_candidate": "후보자 등록",
+    "cta_company": "기업 안내",
+    "venue": "COBI Work – Convention Room 4F, 7군, 호치민",
+    "countdown_days": "일",
+    "countdown_hours": "시간",
+    "countdown_minutes": "분",
+    "countdown_seconds": "초",
+    "deadline_label": "이벤트 시작까지"
+  },
+  "stats": {
+    "companies": "참여 기업",
+    "companies_value": "12",
+    "interviews": "인터뷰 슬롯",
+    "interviews_value": "60",
+    "matches": "매칭 목표",
+    "matches_value": "24",
+    "hackathon": "아이디어톤 팀",
+    "hackathon_value": "10"
+  },
+  "overview": {
+    "eyebrow": "Event Overview",
+    "title": "3일, 3가지 경험",
+    "day1_date": "5/19 (화)",
+    "day1_theme": "Pre-event & 멘토링",
+    "day1_desc": "개회식, 기업 소개, 전문가 멘토링 & 인터뷰.",
+    "day2_date": "5/20 (수)",
+    "day2_theme": "아이디어톤 Day",
+    "day2_desc": "기업 실제 과제 해결 아이디어톤, 멘토링 & 인터뷰 병행.",
+    "day3_date": "5/21 (목)",
+    "day3_theme": "채용 매칭 Day",
+    "day3_desc": "본격 1:1 인터뷰 — 60건 인터뷰 진행."
+  },
+  "schedule": {
+    "eyebrow": "Schedule",
+    "title": "상세 일정",
+    "day1_title": "Day 1 — Pre-event & 멘토링",
+    "day1": [
+      { "time": "09:00 – 09:30", "main": "등록 및 접수", "side": "1:1 인터뷰", "note": "" },
+      { "time": "09:30 – 10:30", "main": "개회식 & 매칭 프로그램 소개", "side": "1:1 인터뷰", "note": "" },
+      { "time": "10:30 – 12:15", "main": "기업 소개 & Q&A + 멘토링 1회차", "side": "1:1 인터뷰", "note": "" },
+      { "time": "12:15 – 13:00", "main": "점심시간", "side": "", "note": "" },
+      { "time": "14:00 – 14:45", "main": "멘토링 2회차", "side": "1:1 인터뷰", "note": "" },
+      { "time": "15:00 – 15:45", "main": "멘토링 3회차", "side": "1:1 인터뷰", "note": "" },
+      { "time": "15:45 – 17:00", "main": "네트워킹 & 1:1 인터뷰", "side": "", "note": "" }
+    ],
+    "day2_title": "Day 2 — 아이디어톤",
+    "day2": [
+      { "time": "09:00 – 09:30", "main": "체크인", "side": "", "note": "" },
+      { "time": "09:30 – 10:30", "main": "아이디어톤 오프닝", "side": "", "note": "" },
+      { "time": "10:30 – 12:15", "main": "아이디어톤 진행", "side": "멘토링 1회차", "note": "" },
+      { "time": "12:15 – 13:30", "main": "점심시간", "side": "", "note": "" },
+      { "time": "14:00 – 14:45", "main": "아이디어톤 발표", "side": "멘토링 2회차", "note": "" },
+      { "time": "15:00 – 15:45", "main": "심사 평가", "side": "멘토링 3회차", "note": "" },
+      { "time": "15:45 – 17:00", "main": "결과 발표 & 마무리", "side": "", "note": "" }
+    ],
+    "day3_title": "Day 3 — 1:1 인터뷰",
+    "day3": [
+      { "time": "09:00 – 09:30", "main": "오리엔테이션 & 준비", "side": "", "note": "" },
+      { "time": "09:30 – 12:30", "main": "1:1 인터뷰 (오전)", "side": "멘토링 1회차", "note": "" },
+      { "time": "12:30 – 13:30", "main": "점심시간", "side": "", "note": "" },
+      { "time": "13:30 – 16:30", "main": "1:1 인터뷰 (오후)", "side": "멘토링 2회차", "note": "" },
+      { "time": "17:00", "main": "전체 행사 종료", "side": "", "note": "" }
+    ],
+    "col_time": "시간",
+    "col_main": "Convention Room",
+    "col_side": "Meeting Room / Lounge"
+  },
+  "programs": {
+    "eyebrow": "Programs",
+    "title": "참여 프로그램",
+    "interview_title": "1:1 인터뷰",
+    "interview_desc": "12개 한국 Tech 기업과 직접 면접. 30분 인터뷰 — 현장에서 바로 채용 연결.",
+    "interview_detail": "60 인터뷰 슬롯 · 기업당 5건",
+    "hackathon_title": "아이디어톤",
+    "hackathon_desc": "기업의 실제 과제를 하루 안에 해결. 우수 팀에게 상금 수여.",
+    "hackathon_detail": "10팀 · 총 상금 5,000만 VNĐ",
+    "mentoring_title": "멘토링",
+    "mentoring_desc": "한국 현직 전문가와 1:1 커리어 상담. Career path, 기술 트렌드 논의.",
+    "mentoring_detail": "하루 3세션 · 45분/세션"
+  },
+  "venue": {
+    "eyebrow": "Venue",
+    "title": "장소",
+    "name": "COBI Work – Convention Room 4F",
+    "address": "Cobi Tower II, 2-4 Đường số 8, Tân Mỹ, 7군, 호치민시",
+    "map_link": "Google Maps에서 보기",
+    "areas": [
+      { "area": "Convention Room 4F", "purpose": "메인 이벤트 / 인터뷰" },
+      { "area": "Coffee Lounge L3", "purpose": "1:1 인터뷰 공간" },
+      { "area": "Meeting Room L4", "purpose": "멘토링 세션" }
+    ]
+  },
+  "forCompanies": {
+    "eyebrow": "For Companies",
+    "title": "기업 안내",
+    "checkin_title": "체크인 안내",
+    "checkin_rules": [
+      "오전 세션: 08:30 이전 도착",
+      "오후 세션: 13:30 이전 도착",
+      "등록 데스크 체크인 → 명찰 수령 → 인터뷰 테이블 배정 → 최종 스케줄 수령"
+    ],
+    "prepare_title": "준비 사항",
+    "prepare_required": ["채용 자료 / JD", "회사 소개", "후보자 평가 양식", "노트북 & 충전기"],
+    "prepare_optional": ["롤업 배너", "회사 브로슈어", "굿즈/기념품"]
+  },
+  "cta": {
+    "title": "새로운 기회를\n잡을 준비 되셨나요?",
+    "subtitle": "지금 등록하고 한국 Top Tech 기업과 직접 연결되세요.",
+    "button_candidate": "후보자 등록",
+    "button_hackathon": "아이디어톤 등록"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "문의처",
+    "roles": [
+      { "role": "Event Lead", "name": "남영훈 (Korea)", "phone": "0979 426 430" },
+      { "role": "HR Coordinator", "name": "Tran Thuy Tien (Vietnam)", "phone": "0908 885 090" },
+      { "role": "Onsite Support", "name": "Minh Thu (Vietnam)", "phone": "0896 487 127" }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2026 LIKELION Vietnam. All rights reserved.",
+    "contact": "문의",
+    "terms": "이용약관",
+    "privacy": "개인정보처리방침"
+  }
+}

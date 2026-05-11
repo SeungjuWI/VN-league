@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "title": "May Matching Week: K-Tech Connect",
+    "description": "Unlock Your Next Move — Sự kiện kết nối tuyển dụng công nghệ Hàn Quốc tại TP.HCM"
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "login": "Đăng nhập",
+    "schedule": "Lịch trình",
+    "register": "Đăng ký",
+    "language": "Ngôn ngữ"
+  },
+  "hero": {
+    "badge": "19 – 21 THÁNG 5, 2026",
+    "title_line1": "K-Tech",
+    "title_line2": "Connect.",
+    "event_name": "May Matching Week",
+    "subtitle": "Unlock Your Next Move",
+    "description": "3 ngày kết nối trực tiếp với doanh nghiệp công nghệ Hàn Quốc — Mentoring, Ideathon & Phỏng vấn 1:1 tại TP.HCM.",
+    "cta_candidate": "Đăng ký ứng viên",
+    "cta_company": "Dành cho doanh nghiệp",
+    "venue": "COBI Work – Convention Room 4F, Q.7, TP.HCM",
+    "countdown_days": "Ngày",
+    "countdown_hours": "Giờ",
+    "countdown_minutes": "Phút",
+    "countdown_seconds": "Giây",
+    "deadline_label": "Sự kiện bắt đầu trong"
+  },
+  "stats": {
+    "companies": "Doanh nghiệp",
+    "companies_value": "12",
+    "interviews": "Slot phỏng vấn",
+    "interviews_value": "60",
+    "matches": "Mục tiêu matching",
+    "matches_value": "24",
+    "hackathon": "Đội Ideathon",
+    "hackathon_value": "10"
+  },
+  "overview": {
+    "eyebrow": "Event Overview",
+    "title": "3 ngày, 3 trải nghiệm",
+    "day1_date": "19/05 (Thứ Ba)",
+    "day1_theme": "Pre-event & Mentoring",
+    "day1_desc": "Khai mạc, giới thiệu doanh nghiệp, mentoring 1:1 với chuyên gia Hàn Quốc & phỏng vấn.",
+    "day2_date": "20/05 (Thứ Tư)",
+    "day2_theme": "Ideathon Day",
+    "day2_desc": "Ideathon giải quyết bài toán thực tế, mentoring & phỏng vấn song song.",
+    "day3_date": "21/05 (Thứ Năm)",
+    "day3_theme": "Recruitment Day",
+    "day3_desc": "Ngày phỏng vấn 1:1 quy mô lớn — 60 lượt phỏng vấn trực tiếp với doanh nghiệp."
+  },
+  "schedule": {
+    "eyebrow": "Schedule",
+    "title": "Lịch trình chi tiết",
+    "day1_title": "Ngày 1 — Pre-event & Mentoring",
+    "day1": [
+      { "time": "09:00 – 09:30", "main": "Đăng ký & tiếp đón", "side": "1:1 Interview", "note": "" },
+      { "time": "09:30 – 10:30", "main": "Khai mạc & giới thiệu chương trình matching", "side": "1:1 Interview", "note": "" },
+      { "time": "10:30 – 12:15", "main": "Giới thiệu doanh nghiệp & Q&A + Mentoring phiên 1", "side": "1:1 Interview", "note": "" },
+      { "time": "12:15 – 13:00", "main": "Nghỉ trưa", "side": "", "note": "" },
+      { "time": "14:00 – 14:45", "main": "Mentoring phiên 2", "side": "1:1 Interview", "note": "" },
+      { "time": "15:00 – 15:45", "main": "Mentoring phiên 3", "side": "1:1 Interview", "note": "" },
+      { "time": "15:45 – 17:00", "main": "Networking & 1:1 Interview", "side": "", "note": "" }
+    ],
+    "day2_title": "Ngày 2 — Ideathon",
+    "day2": [
+      { "time": "09:00 – 09:30", "main": "Check-in", "side": "", "note": "" },
+      { "time": "09:30 – 10:30", "main": "Khai mạc Ideathon", "side": "", "note": "" },
+      { "time": "10:30 – 12:15", "main": "Ideathon tiến hành", "side": "Mentoring phiên 1", "note": "" },
+      { "time": "12:15 – 13:30", "main": "Nghỉ trưa", "side": "", "note": "" },
+      { "time": "14:00 – 14:45", "main": "Trình bày Ideathon", "side": "Mentoring phiên 2", "note": "" },
+      { "time": "15:00 – 15:45", "main": "Đánh giá", "side": "Mentoring phiên 3", "note": "" },
+      { "time": "15:45 – 17:00", "main": "Công bố kết quả & tổng kết", "side": "", "note": "" }
+    ],
+    "day3_title": "Ngày 3 — 1:1 Interview Day",
+    "day3": [
+      { "time": "09:00 – 09:30", "main": "Orientation & chuẩn bị", "side": "", "note": "" },
+      { "time": "09:30 – 12:30", "main": "Phỏng vấn 1:1 (sáng)", "side": "Mentoring phiên 1", "note": "" },
+      { "time": "12:30 – 13:30", "main": "Nghỉ trưa", "side": "", "note": "" },
+      { "time": "13:30 – 16:30", "main": "Phỏng vấn 1:1 (chiều)", "side": "Mentoring phiên 2", "note": "" },
+      { "time": "17:00", "main": "Kết thúc sự kiện", "side": "", "note": "" }
+    ],
+    "col_time": "Thời gian",
+    "col_main": "Convention Room",
+    "col_side": "Meeting Room / Lounge"
+  },
+  "programs": {
+    "eyebrow": "Programs",
+    "title": "Bạn có thể tham gia gì?",
+    "interview_title": "Phỏng vấn 1:1",
+    "interview_desc": "Gặp gỡ trực tiếp 12 doanh nghiệp công nghệ Hàn Quốc. Mỗi phiên 30 phút — cơ hội được tuyển dụng ngay tại sự kiện.",
+    "interview_detail": "60 slot phỏng vấn · 5 slot/doanh nghiệp",
+    "hackathon_title": "Ideathon",
+    "hackathon_desc": "Giải quyết bài toán thực tế từ doanh nghiệp trong 1 ngày. Đội xuất sắc nhận giải thưởng hấp dẫn.",
+    "hackathon_detail": "10 đội · Giải thưởng 50 triệu VNĐ",
+    "mentoring_title": "Mentoring",
+    "mentoring_desc": "Nhận tư vấn 1:1 từ chuyên gia Hàn Quốc về career path, kỹ năng và xu hướng ngành tech.",
+    "mentoring_detail": "3 phiên/ngày · 45 phút/phiên"
+  },
+  "venue": {
+    "eyebrow": "Venue",
+    "title": "Địa điểm",
+    "name": "COBI Work – Convention Room 4F",
+    "address": "Cobi Tower II Building, 2-4 Đường số 8, Phường Tân Mỹ, Quận 7, TP.HCM",
+    "map_link": "Xem trên Google Maps",
+    "areas": [
+      { "area": "Convention Room 4F", "purpose": "Sự kiện chính / Phỏng vấn" },
+      { "area": "Coffee Lounge L3", "purpose": "Khu vực phỏng vấn 1:1" },
+      { "area": "Meeting Room L4", "purpose": "Phiên Mentoring" }
+    ]
+  },
+  "forCompanies": {
+    "eyebrow": "For Companies",
+    "title": "Dành cho doanh nghiệp",
+    "checkin_title": "Hướng dẫn check-in",
+    "checkin_rules": [
+      "Buổi sáng: Có mặt trước 08:30",
+      "Buổi chiều: Có mặt trước 13:30",
+      "Check-in tại quầy đăng ký → Nhận thẻ tên → Nhận vị trí bàn phỏng vấn → Nhận lịch phỏng vấn"
+    ],
+    "prepare_title": "Cần chuẩn bị",
+    "prepare_required": ["Tài liệu tuyển dụng / JD", "Giới thiệu công ty", "Form đánh giá ứng viên", "Laptop & sạc"],
+    "prepare_optional": ["Roll-up banner", "Brochure công ty", "Quà tặng/merchandise"]
+  },
+  "cta": {
+    "title": "Sẵn sàng\ncho cơ hội mới?",
+    "subtitle": "Đăng ký ngay để được kết nối với doanh nghiệp công nghệ Hàn Quốc hàng đầu.",
+    "button_candidate": "Đăng ký ứng viên",
+    "button_hackathon": "Đăng ký Ideathon"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Liên hệ hỗ trợ",
+    "roles": [
+      { "role": "Event Lead", "name": "Nam Young Hun (Korea)", "phone": "0979 426 430" },
+      { "role": "HR Coordinator", "name": "Tran Thuy Tien (Vietnam)", "phone": "0908 885 090" },
+      { "role": "Onsite Support", "name": "Minh Thu (Vietnam)", "phone": "0896 487 127" }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2026 LIKELION Vietnam. All rights reserved.",
+    "contact": "Liên hệ",
+    "terms": "Điều khoản sử dụng",
+    "privacy": "Chính sách bảo mật"
+  }
+}
