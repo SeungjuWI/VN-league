@@ -24,16 +24,13 @@ export function Navbar() {
           <a href="#schedule" className="font-mono text-xs text-muted-foreground hover:text-foreground transition-colors uppercase tracking-wider">
             [{t("schedule")}]
           </a>
-          <a href="#register" className="font-mono text-xs text-muted-foreground hover:text-foreground transition-colors uppercase tracking-wider">
-            [{t("register")}]
-          </a>
           <a href={switchHref} className="flex items-center gap-1 font-mono text-xs text-muted-foreground hover:text-foreground transition-colors">
             <Globe className="w-3.5 h-3.5" />
             {otherLocale === "ko" ? "KO" : "VI"}
           </a>
-          <a href="#register" className="btn-glow font-pixel text-sm px-4 py-1.5 rounded-sm text-primary-foreground uppercase tracking-wider transition-all">
+          <Link href={`/${locale}/login`} className="btn-glow font-pixel text-sm px-4 py-1.5 rounded-sm text-primary-foreground uppercase tracking-wider transition-all">
             REGISTER
-          </a>
+          </Link>
         </div>
 
         <button className="md:hidden p-2 text-foreground" onClick={() => setMobileOpen(!mobileOpen)}>
@@ -50,9 +47,9 @@ export function Navbar() {
             <Globe className="w-3.5 h-3.5" />
             {otherLocale === "ko" ? "한국어" : "Tiếng Việt"}
           </a>
-          <a href="#register" className="btn-glow block text-center font-pixel text-sm px-4 py-2 rounded-sm text-primary-foreground uppercase" onClick={() => setMobileOpen(false)}>
+          <Link href={`/${locale}/login`} className="btn-glow block text-center font-pixel text-sm px-4 py-2 rounded-sm text-primary-foreground uppercase" onClick={() => setMobileOpen(false)}>
             REGISTER
-          </a>
+          </Link>
         </div>
       )}
     </nav>

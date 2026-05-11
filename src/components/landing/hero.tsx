@@ -1,10 +1,11 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Countdown } from "./countdown";
 
 export function Hero() {
   const t = useTranslations("hero");
+  const locale = useLocale();
 
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center hero-effects overflow-hidden px-6">
@@ -81,7 +82,7 @@ export function Hero() {
         <div className="text-right space-y-2">
           <p className="text-sm text-muted-foreground">You in?</p>
           <a
-            href="#register"
+            href={`/${locale}/login`}
             className="btn-glow inline-block font-pixel text-xl sm:text-2xl px-6 py-3 rounded-sm text-primary-foreground uppercase tracking-wider transition-all"
           >
             REGISTER NOW
