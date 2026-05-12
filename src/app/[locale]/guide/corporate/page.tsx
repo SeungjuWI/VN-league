@@ -29,11 +29,11 @@ export default async function CorporateGuidePage({
         @media print {
           body { background: white !important; background-image: none !important; margin: 0 !important; padding: 0 !important; }
           .no-print { display: none !important; }
-          .guide-root { min-height: auto; }
-          .guide-root header { padding: 32px 0 !important; }
-          .guide-main { padding: 24px 0 40px !important; }
+          .guide-root { min-height: auto; padding: 0 14mm 12mm !important; }
+          .guide-root header { margin: 0 -14mm !important; padding: 28px 14mm !important; }
+          .guide-main { max-width: 100% !important; padding: 28px 0 20px !important; }
           .print-break { break-before: page; }
-          @page { margin: 18mm 16mm; size: A4; }
+          @page { margin: 10mm 8mm; size: A4; }
         }
       `}</style>
 
@@ -107,7 +107,7 @@ export default async function CorporateGuidePage({
               <p style={itemText}>1:1 인터뷰 진행 후 최종 매칭 희망 회신은 <strong>인터뷰 종료일로부터 최대 3일 이내</strong>에 <strong>likelion.vn@likelion.net</strong>으로 전달하여 주시면 감사하겠습니다.</p>
             </GuideItem>
             <GuideItem title="현장 문의">
-              <p style={itemText}>방문 기업을 대상으로 안내를 위한 카카오톡 오픈채팅방을 개설하여 초대드릴 예정입니다.<br />행사 관련 문의 사항은 오픈채팅방을 통해 연락 부탁드립니다.</p>
+              <p style={itemText}>방문 기업을 대상으로 안내를 위한 카카오톡 오픈채팅방을 개설하여 초대드릴 예정입니다. 행사 관련 문의 사항은 오픈채팅방을 통해 연락 부탁드립니다.</p>
             </GuideItem>
           </div>
         </Section>
@@ -251,8 +251,7 @@ export default async function CorporateGuidePage({
             <div style={{ background: "#F8F9FA", border: "1px solid #E5E7EB", borderRadius: 8, padding: 20 }}>
               <h4 style={{ fontSize: 14, fontWeight: 700, color: "#1E3A5F", margin: "0 0 8px" }}>현장 문의</h4>
               <p style={{ fontSize: 13, color: "#374151", margin: 0, lineHeight: 1.7 }}>
-                방문 기업을 대상으로 안내를 위한 카카오톡 오픈채팅방에 초대드릴 예정입니다.<br />
-                행사 관련 문의 사항은 오픈채팅방을 통해 말씀해 주시기 바랍니다.
+                방문 기업을 대상으로 안내를 위한 카카오톡 오픈채팅방에 초대드릴 예정입니다. 행사 관련 문의 사항은 오픈채팅방을 통해 말씀해 주시기 바랍니다.
               </p>
             </div>
           </div>
